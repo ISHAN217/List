@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-import torch
+
 import torchvision.transforms as transforms
 
 class ImageCaptioningModel:
@@ -49,15 +49,14 @@ def main():
 def generate_captions(image, model_weights_path, transform):
     # Load pre-trained model
     model = ImageCaptioningModel(None, None, None)  # Initialize with None for encoder, decoder, and cnn_model
-    model.load_state_dict(torch.load(model_weights_path))
-    model.eval()
+   
 
     # Pre-process the image
     image = transform(image).unsqueeze(0)
 
     # Perform inference
-    with torch.no_grad():
-        captions = model.generate_captions(image)
+    
+     captions = model.generate_captions(image)
 
     return captions
 
