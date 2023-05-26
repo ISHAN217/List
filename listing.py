@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1_beOHxMJowJwXmih3TVZ3eZDWkxhXxeQ
 """
 
-!pip -q install kaggle
+
 
 import tensorflow as tf
 import os
