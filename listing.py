@@ -481,7 +481,7 @@ Model = model()
 # Save the model
 model.save("C:/Users/KIIT/Downloads/Listed")
 
-!pip install streamlit
+
 
 
 
