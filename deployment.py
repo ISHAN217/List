@@ -7,7 +7,7 @@ def main():
     st.write("Upload an image and get AI-generated captions!")
 
     # Load pre-trained model
-    model_weights_path = "C:/Users/KIIT/Downloads/Listed/model.h5"  # Specify the path to your pre-trained model weights
+    model_weights_path = ("C:/Users/KIIT/Downloads/Listed/model.h5")  # Specify the path to your pre-trained model weights
     model = get_caption_model()
 
     # Load the model weights
