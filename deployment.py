@@ -55,9 +55,7 @@ def generate_captions(image, model_weights_path, transform):
     image = transform(image).unsqueeze(0)
 
     # Perform inference
-    
-     captions = model.generate_captions(image)
-
+    captions = model.generate_captions(image)
     return captions
 
 if __name__ == '__main__':
