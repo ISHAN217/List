@@ -33,10 +33,7 @@ from keras.preprocessing.image import ImageDataGenerator
 from google.colab import files
 files.upload()
 
-!rm -r ~/.kaggle
-!mkdir ~/.kaggle
-!mv ./kaggle.json ~/.kaggle/
-!chmod 600 ~/.kaggle/kaggle.json
+
 
 if not os.path.exists('/content/data/'):
 
